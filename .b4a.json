@@ -1,0 +1,30 @@
+{
+  "deploy": {
+    "modules": [
+      {
+        "type": "nodejs",
+        "path": ".",
+        "name": "geopressci-backend",
+        "env": {
+          "NODE_ENV": "production",
+          "PORT": "1337",
+          "MONGODB_URI": "@mongo-db-uri",
+          "JWT_SECRET": "@jwt-secret",
+          "NODE_VERSION": "18.x"
+        },
+        "scripts": {
+          "start": "node src/server.js",
+          "dev": "nodemon src/server.js",
+          "test": "jest --detectOpenHandles",
+          "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+        },
+        "engines": {
+          "node": "18.x",
+          "npm": "9.x"
+        },
+        "buildCommand": "npm install && npm run build",
+        "devCommand": "npm run dev"
+      }
+    ]
+  }
+}
