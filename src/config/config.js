@@ -4,12 +4,12 @@ const config = {
   // Environment
   env: process.env.NODE_ENV || 'development',
   port: process.env.PORT || 5002,
-  frontendUrl: process.env.FRONTEND_URL || 'https://geopressci.netlify.app',
+  frontendUrl: process.env.FRONTEND_URL || 'https://geopressci.netlify.app', 'https://geopressci.com'
   
   // CORS Configuration
   cors: {
     allowedOrigins: [
-      process.env.FRONTEND_URL || 'https://geopressci.netlify.app',
+      process.env.FRONTEND_URL || 'https://geopressci.com', 
       'https://geopressci.netlify.app',
       'http://127.0.0.1:3000',
     ],
