@@ -9,8 +9,7 @@ const config = {
   // CORS Configuration
   cors: {
     allowedOrigins: [
-      process.env.FRONTEND_URL || 'https://geopressci.com', 
-      'https://geopressci.netlify.app',
+      process.env.FRONTEND_URL || 'https://geopressci.com',
       'http://127.0.0.1:3000',
     ],
     credentials: true,
