@@ -10,8 +10,14 @@ const config = {
   cors: {
     allowedOrigins: [
       process.env.FRONTEND_URL || 'https://geopressci.com',
+      'https://geopressci.com',
+      'https://www.geopressci.com',
+      'http://localhost:3000',
+      'http://localhost:3001',
+      'http://localhost:3002',
       'http://127.0.0.1:3000',
-      'https://geopressci.netlify.app',
+      'http://127.0.0.1:3001',
+      'http://127.0.0.1:3002',
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
